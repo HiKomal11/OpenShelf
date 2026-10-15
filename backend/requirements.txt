@@ -64,3 +64,5 @@ Pillow==12.3.0
 
 boto3==1.40.18
 vercel==0.11.6
+
+Authlib==1.8.0
