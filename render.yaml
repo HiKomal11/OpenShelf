@@ -1,0 +1,14 @@
+
+services:
+  - type: web
+    name: openshelf-api
+    runtime: python
+    plan: free
+    buildCommand: bash render-build.sh
+    startCommand: cd backend && uvicorn main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/v1/health
+    envVars:
+      - key: STORAGE_BACKEND
+        value: vercel_blob
+      - key: STORAGE_DIR
+        value: /tmp/openshelf-storage

@@ -1,0 +1,50 @@
+# Python
+
+.venv/
+venv/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+coverage.xml
+
+# Environment variables and secrets
+
+.env
+.env.*
+!.env.example
+!**/.env.example
+
+# Next.js
+
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/next-env.d.ts
+
+# Build output
+
+dist/
+build/
+coverage/
+
+# Editors and operating systems
+
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local backup files
+*.backup
+
+# Logs
+
+*.log
+
+# PDF Library uploaded files and local storage
+
+backend/storage/
